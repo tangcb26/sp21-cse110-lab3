@@ -34,7 +34,7 @@ see template below, but a template to fill out each Monday
 * team goals
 
 # Symbol Key
-see template below, a key for notes
+
 
 # Standup
 

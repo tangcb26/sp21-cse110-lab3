@@ -2,6 +2,10 @@
 <html lang='en'>
     
     <head>
+      <link rel="stylesheet" href="mystyle.css">
+      
+      <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Dots&display=swap" rel="stylesheet">
       <title>lab2</title>
         <meta name="Chongbo Tang" content = "Lab2">
 
@@ -12,21 +16,38 @@
               text-align: center;
               
             }
-            </style>
+
+            p.ex1 {display: inline;}
+            p.ex2 {display: block;}
+
+            
+            @media screen and (min-width: 480px) {
+            #leftsidebar {width: 200px; float: left;}
+            #main {margin-left: 216px;}
+
+            
+}
+
+  
+        </style>
      
     </head>
     <body>
-        <div class="myDiv">
-        <h1 id="top" style="text-align:center;">Journal Entries😀</h1>
+        <div class="myDiv" >
+        <h1 id="top" style="text-align:center;" class="newfont">Journal Entries😀</h1>
         </div>
         <ul>
-            <li><a href="#day1">DAY: APRIL 5, 2021</a></li>
-            <li><a href="#day2">DAY: APRIL 6, 2021</a></li>
-            <li><a href="#day3">DAY: APRIL 7, 2021</a></li>
+            <div class="display">
+              <div>
+            <li><a class="mylink secondfont"  href="#day1">DAY: APRIL 5, 2021</a></li> 
+            <li><a class="mylink secondfont" href="#day2">DAY: APRIL 6, 2021</a></li>
+            <li><a class="mylink secondfont" href="#day3">DAY: APRIL 7, 2021</a></li>
+            </div></div>
         </ul> 
         
 
           <form action="/action_page.php">
+            
             <fieldset>
              <legend>Your Journal:</legend>
              <label for="fname">Journal name:</label>
@@ -107,7 +128,7 @@
 
 
             <li>
-                <h2 id="day2"> DAY: APRIL 6, 2021</h2>
+              <h2 id="day1" style="font-size:35px;">DAY: APRIL 6, 2021</h2>
                 <ol><li>
                     <h3 class="card-subheading">Baylor ends Gonzaga’s perfect season, wins NCAA championship</h3>
                     <h4 style="font-family:courier;"><I>Baylor raced out a 9-0 lead in the game’s first 2½ minutes and never trailed. The Bears led by 19 midway through the first half, the largest deficit Gonzaga had faced all season.</I></h4>
@@ -151,7 +172,7 @@
 
 
             <li>
-                <h2 id="day3"> DAY: APRIL 7, 2021</h2>
+              <h2 id="day1" style="font-size:35px;">DAY: APRIL 7, 2021</h2>
                 <ol><li>
                     <h3 class="card-subheading">Metamodernity-Vansire</h3>
                     <h4 style="font-family:courier;"><I>One of my favorite song</I></h4>
@@ -190,6 +211,19 @@
 
  
         <p><a href="#top">go to top</a></p>
+
+        <h1>A list of my favorite songs</h1>
+        <div class="grid-container">
+          <div class="grid-item">Yellow</div>
+          <div class="grid-item">Wing Wing</div>
+          <div class="grid-item">Up&Up</div>  
+          <div class="grid-item">Hotel California</div>
+          <div class="grid-item">Everglow</div>
+          <div class="grid-item">Paul</div>  
+          <div class="grid-item">Wanli</div>
+          <div class="grid-item">Ohio</div>
+          <div class="grid-item">Umbrella</div>  
+        </div>
     </body>
 
 </html>

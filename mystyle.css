@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(223, 233, 235);   /*use rgb, also background-color*/
+  }
+  
+  h1 {                              /*use hex*/
+    color: #456ebf;
+    margin-left: 0cm;       /*absolute unites*/
+    font-size: 0.4in;       /*absolute unites*/
+    margin:1em;   /*margin shorthand*/
+    padding-top:0.1em;    /*[addign longhand*/
+    padding-bottom:0.1em;
+    position: static;         /*position*/
+  }
+
+  h2 {                                           /*use hsl*/
+      color: hsl(302, 51%, 32%);
+      font-size: 40px;      /*absolute unites*/
+      line-height: 2em;     /*relative units*/
+      background-color: lightgrey;
+      width: 350px;    /*sizing*/
+      height:auto;
+      border: 5px solid green;
+      padding: 5px;         /*padding shorthand*/
+      margin: 20px;
+      margin-top: 1em;    /*margin longhand*/
+      position:relative;
+      
+      
+  }
+
+  
+
+  h3 {
+      color:slategray;    /*color name*/
+      font-size: 3ch;       /*relative units*/
+      line-height: 1pc;     /*relative units*/
+      margin: auto auto auto auto;  /*marign auto*/
+      display: inline;   /*display inline*/
+      max-width:auto;  /*max width*/
+      position:static;
+  }
+
+  h4{
+    text-decoration: underline;  /*text decoration*/
+    text-align: justify;  /*text align*/
+    color:red;
+    display: block;  /*display block*/
+  }
+
+  a.mylink:hover{           /*pseudo class*/
+      color:hotpink;
+  }
+
+  a.mylink.active{
+      color:blue;
+  }
+
+  .display{
+      display:block;
+      display:inline;
+      flex-wrap: nowrap;
+      background-color: DodgerBlue;
+      display:flex;    
+      width: 430px;
+      display:grid;
+      display: inline-grid;
+  }
+
+  .display > div {
+    background-color: #f1f1f1;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 25px;
+  
+  }
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+   /* grid-column-gap: 50px;
+    grid-row-gap: 50px;*/
+    grid-gap: 50px 50px;
+  }
+
+  .grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .position{
+      position:static;
+      position:relative;
+  }
+
+  .newfont{
+
+    font-family: 'Zen Dots', cursive;
+  }
+
+  .secondfont{
+    font-family: 'RocknRoll One', sans-serif;
+  }

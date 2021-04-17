@@ -1,4 +1,4 @@
-body {
+  * {    /*universal selector*/
     background-color: rgb(223, 233, 235);   /*use rgb, also background-color*/
   }
   
@@ -13,11 +13,9 @@ body {
   }
 
   h2 {                                           /*use hsl*/
-      color: hsl(302, 51%, 32%);
-      font-size: 40px;      /*absolute unites*/
-      line-height: 2em;     /*relative units*/
+      
       background-color: lightgrey;
-      width: 350px;    /*sizing*/
+      width: 450px;    /*sizing*/
       height:auto;
       border: 5px solid green;
       padding: 5px;         /*padding shorthand*/
@@ -28,7 +26,11 @@ body {
       
   }
 
-  
+  #day1{                                          /*id selector*/
+    color: hsl(302, 51%, 32%);
+    font-size: 40px;      /*absolute unites*/
+    line-height: 2em;     /*relative units*/
+  }
 
   h3 {
       color:slategray;    /*color name*/
@@ -40,7 +42,7 @@ body {
       position:static;
   }
 
-  h4{
+  h4{              /*element selector*/
     text-decoration: underline;  /*text decoration*/
     text-align: justify;  /*text align*/
     color:red;
@@ -51,11 +53,11 @@ body {
       color:hotpink;
   }
 
-  a.mylink.active{
+  a.mylink.active{            /*combining Two Selectors*/
       color:blue;
   }
 
-  .display{
+  .display{           /*class selector*/
       display:block;
       display:inline;
       flex-wrap: nowrap;
@@ -66,12 +68,12 @@ body {
       display: inline-grid;
   }
 
-  .display > div {
+  .display > div {     /*child combinator*/
     background-color: #f1f1f1;
     width: 400px;
     margin: 10px;
     text-align: center;
-    line-height: 25px;
+    line-height: 40px;
     font-size: 25px;
   
   }
@@ -106,3 +108,21 @@ body {
   .secondfont{
     font-family: 'RocknRoll One', sans-serif;
   }
+
+  a[target] {                       /*Attribute Selector */
+    background-color : white;
+  
+  }
+
+  h1,h2,h3{      /*selector list&decendant combinator*/
+    font-family: 'Zen Dots', cursive;
+  }
+
+  div+div{               /*adacent sibling combinator*/
+    background-color:yellow;
+  }
+
+  h1~h2{                      /*general sibling combinator*/
+    background-color:green;
+  }
+
